@@ -1,7 +1,7 @@
 # terraform-polkadot-packet-node
 
-[![open-issues](https://img.shields.io/github/issues-raw/insight-infrastructure/terraform-polkadot-packet-node?style=for-the-badge)](https://github.com/insight-infrastructure/terraform-polkadot-packet-node/issues)
-[![open-pr](https://img.shields.io/github/issues-pr-raw/insight-infrastructure/terraform-polkadot-packet-node?style=for-the-badge)](https://github.com/insight-infrastructure/terraform-polkadot-packet-node/pulls)
+[![open-issues](https://img.shields.io/github/issues-raw/insight-w3f/terraform-polkadot-packet-node?style=for-the-badge)](https://github.com/insight-w3f/terraform-polkadot-packet-node/issues)
+[![open-pr](https://img.shields.io/github/issues-pr-raw/insight-w3f/terraform-polkadot-packet-node?style=for-the-badge)](https://github.com/insight-w3f/terraform-polkadot-packet-node/pulls)
 
 ## Features
 
@@ -16,7 +16,7 @@ For Terraform v0.12.0+
 ```
 variable "public_key" {}
 module "this" {
-  source = "github.com/insight-infrastructure/terraform-polkadot-packet-node"
+  source = "github.com/insight-w3f/terraform-polkadot-packet-node"
   project_name = "stuff"
   public_key   = var.public_key
 }
@@ -78,7 +78,7 @@ To run them:
 
 ## Authors
 
-Module managed by [insight-infrastructure](https://github.com/robc-io)
+Module managed by [insight-infrastructure](https://github.com/insight-infrastructure) and [insight-w3f](https://github.com/insight-w3f)
 
 ## Credits
 
