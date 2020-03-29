@@ -1,6 +1,7 @@
 ########
 # Label
 ########
+
 variable "environment" {
   description = "The environment"
   type        = string
@@ -34,40 +35,42 @@ variable "owner" {
 ##########
 # Provider
 ##########
+
 variable "project_name" {
-  description = ""
+  description = "Name of the project in Packet"
   type        = string
 }
 
 ######
 # Node
 ######
+
 variable "location" {
-  description = ""
+  description = "Data centre location name"
   type        = string
   default     = "ewr1"
 }
 
 variable "machine_type" {
-  description = ""
+  description = "Instance type"
   type        = string
   default     = "t1.small.x86"
 }
 
 variable "public_key" {
-  description = ""
+  description = "The public key to use"
   type        = string
 }
 
 
 variable "node_count" {
-  description = ""
+  description = "Number of instances to spawn"
   type        = number
   default     = 1
 }
 
 variable "name" {
-  description = ""
+  description = "Name for resources (i.e. hostname)"
   type        = string
   default     = "w3f"
 }

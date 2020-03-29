@@ -2,6 +2,7 @@
 
 [![open-issues](https://img.shields.io/github/issues-raw/insight-w3f/terraform-polkadot-packet-node?style=for-the-badge)](https://github.com/insight-w3f/terraform-polkadot-packet-node/issues)
 [![open-pr](https://img.shields.io/github/issues-pr-raw/insight-w3f/terraform-polkadot-packet-node?style=for-the-badge)](https://github.com/insight-w3f/terraform-polkadot-packet-node/pulls)
+[![build-status](https://img.shields.io/circleci/build/github/insight-w3f/terraform-polkadot-packet-node?style=for-the-badge)](https://circleci.com/gh/insight-w3f/terraform-polkadot-packet-node)
 
 ## Features
 
@@ -40,15 +41,15 @@ No issue is creating limit on this module.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:-----:|
 | environment | The environment | `string` | `""` | no |
-| location | ##### Node ##### | `string` | `"ewr1"` | no |
-| machine\_type | n/a | `string` | `"t1.small.x86"` | no |
-| name | n/a | `string` | `"w3f"` | no |
+| location | Data centre location name | `string` | `"ewr1"` | no |
+| machine\_type | Instance type | `string` | `"t1.small.x86"` | no |
+| name | Name for resources (i.e. hostname) | `string` | `"w3f"` | no |
 | namespace | The namespace to deploy into | `string` | `""` | no |
 | network\_name | The network name, ie kusama / mainnet | `string` | `""` | no |
-| node\_count | n/a | `number` | `1` | no |
+| node\_count | Number of instances to spawn | `number` | `1` | no |
 | owner | Owner of the infrastructure | `string` | `""` | no |
-| project\_name | ######### Provider ######### | `string` | n/a | yes |
-| public\_key | n/a | `string` | n/a | yes |
+| project\_name | Name of the project in Packet | `string` | n/a | yes |
+| public\_key | The public key to use | `string` | n/a | yes |
 | stage | The stage of the deployment | `string` | `""` | no |
 
 ## Outputs
